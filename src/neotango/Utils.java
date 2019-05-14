@@ -126,7 +126,7 @@ class Utils {
     }
 
     // approximate sketch in fusion tree
-    static long approx_sketch(long m, long x, long b_mask, long bm_mask, int shift_dis) {
+    static long approx_sketch(long m, long x, long b_mask, long bm_mask) {
         long x_prime = x & b_mask;
         long as = mul_high(x_prime, m);
         return as & bm_mask;

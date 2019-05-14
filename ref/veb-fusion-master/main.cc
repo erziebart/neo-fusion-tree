@@ -49,15 +49,16 @@ int main(int argc, char* argv[])
     keys.push_back(8);
     keys.push_back(13);
     std::vector<int> bs = get_impor_bits(keys);
-    for(int i = 0; i < bs.size(); ++i) {
-        std::cout << bs[i] << std::endl;
-    }
+    //for(int i = 0; i < bs.size(); ++i) {
+    //    std::cout << bs[i] << std::endl;
+    //}
     unsigned long m;
     std::vector<int> ms = get_m(bs, m);
-    for(int i = 0; i < ms.size(); ++i) {
-        std::cout << ms[i] << std::endl;
-    }
-    std::cout << m << std::endl;
+    //for(int i = 0; i < ms.size(); ++i) {
+    //    std::cout << ms[i] << std::endl;
+    //}
+    //std::cout << m << std::endl;
+    std::cout << bs.back() << std::endl << ms.back() << std::endl << bs.front() << std::endl << ms.front() << std::endl;
 
     // std::set<unsigned long long> rbTree;
 
